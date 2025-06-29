@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'your-web-api-key',
-    appId: 'your-web-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    authDomain: 'your-project-id.firebaseapp.com',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'demo-web-api-key',
+    appId: '1:123456789:web:abcdef123456',
+    messagingSenderId: '123456789',
+    projectId: 'library-ms-demo',
+    authDomain: 'library-ms-demo.firebaseapp.com',
+    storageBucket: 'library-ms-demo.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'your-android-api-key',
-    appId: 'your-android-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'demo-android-api-key',
+    appId: '1:123456789:android:abcdef123456',
+    messagingSenderId: '123456789',
+    projectId: 'library-ms-demo',
+    storageBucket: 'library-ms-demo.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'your-ios-api-key',
-    appId: 'your-ios-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'demo-ios-api-key',
+    appId: '1:123456789:ios:abcdef123456',
+    messagingSenderId: '123456789',
+    projectId: 'library-ms-demo',
+    storageBucket: 'library-ms-demo.appspot.com',
     iosBundleId: 'com.library.management.libraryManagementSystem',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'your-macos-api-key',
-    appId: 'your-macos-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'demo-macos-api-key',
+    appId: '1:123456789:macos:abcdef123456',
+    messagingSenderId: '123456789',
+    projectId: 'library-ms-demo',
+    storageBucket: 'library-ms-demo.appspot.com',
     iosBundleId: 'com.library.management.libraryManagementSystem',
   );
 }

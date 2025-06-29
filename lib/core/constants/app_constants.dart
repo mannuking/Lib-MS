@@ -3,6 +3,9 @@ class AppConstants {
   static const String appName = 'Library Management System';
   static const String appVersion = '1.0.0';
   
+  // Demo Mode (set to true for testing without real Firebase)
+  static const bool isDemoMode = true;
+  
   // Firebase Collections
   static const String usersCollection = 'users';
   static const String booksCollection = 'books';
