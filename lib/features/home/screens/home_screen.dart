@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:library_management_system/core/theme/app_colors.dart';
 import 'package:library_management_system/features/auth/services/auth_service.dart';
 import 'package:library_management_system/features/books/services/book_service.dart';
@@ -285,8 +284,8 @@ class HomeScreen extends ConsumerWidget {
             borderRadius: BorderRadius.circular(12),
             gradient: LinearGradient(
               colors: [
-                category.color.withOpacity(0.1),
-                category.color.withOpacity(0.05),
+                category.color.withValues(alpha: 0.1),
+                category.color.withValues(alpha: 0.05),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,

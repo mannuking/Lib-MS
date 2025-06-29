@@ -61,7 +61,7 @@ class _BookDetailsScreenState extends ConsumerState<BookDetailsScreen> {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    AppColors.primary.withOpacity(0.8),
+                    AppColors.primary.withValues(alpha: 0.8),
                     AppColors.primaryDark,
                   ],
                 ),
@@ -82,7 +82,7 @@ class _BookDetailsScreenState extends ConsumerState<BookDetailsScreen> {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.3),
+                                color: Colors.black.withValues(alpha: 0.3),
                                 blurRadius: 10,
                                 offset: const Offset(0, 5),
                               ),
@@ -141,7 +141,7 @@ class _BookDetailsScreenState extends ConsumerState<BookDetailsScreen> {
                                     vertical: 6,
                                   ),
                                   decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.2),
+                                    color: Colors.white.withValues(alpha: 0.2),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: Text(

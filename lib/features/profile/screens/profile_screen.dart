@@ -88,7 +88,7 @@ class ProfileScreen extends ConsumerWidget {
               height: 80,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withValues(alpha: 0.2),
                 border: Border.all(color: Colors.white, width: 3),
               ),
               child: user.profileImageUrl != null
@@ -130,7 +130,7 @@ class ProfileScreen extends ConsumerWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Text(
@@ -296,7 +296,7 @@ class ProfileScreen extends ConsumerWidget {
       leading: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: AppColors.primary.withOpacity(0.1),
+          color: AppColors.primary.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Icon(action.icon, color: AppColors.primary),
@@ -368,8 +368,8 @@ class ProfileScreen extends ConsumerWidget {
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(
           color: borrowedBook.status == 'borrowed' 
-              ? AppColors.warning.withOpacity(0.2)
-              : AppColors.success.withOpacity(0.2),
+              ? AppColors.warning.withValues(alpha: 0.2)
+              : AppColors.success.withValues(alpha: 0.2),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Text(

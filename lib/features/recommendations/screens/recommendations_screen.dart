@@ -6,7 +6,6 @@ import 'package:library_management_system/core/theme/app_colors.dart';
 import 'package:library_management_system/features/auth/services/auth_service.dart';
 import 'package:library_management_system/features/books/services/book_service.dart';
 import 'package:library_management_system/ai/recommendation_service.dart';
-import 'package:library_management_system/shared/widgets/book_card.dart';
 import 'package:library_management_system/shared/models/book_model.dart';
 
 final recommendationServiceProvider = Provider<RecommendationService>((ref) {
@@ -103,8 +102,8 @@ class RecommendationsScreen extends ConsumerWidget {
           borderRadius: BorderRadius.circular(12),
           gradient: LinearGradient(
             colors: [
-              AppColors.secondary.withOpacity(0.8),
-              AppColors.secondaryDark.withOpacity(0.9),
+              AppColors.secondary.withValues(alpha: 0.8),
+              AppColors.secondaryDark.withValues(alpha: 0.9),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -118,7 +117,7 @@ class RecommendationsScreen extends ConsumerWidget {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
+                    color: Colors.white.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Icon(

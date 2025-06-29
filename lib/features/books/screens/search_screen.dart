@@ -104,7 +104,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               color: AppColors.surface,
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.05),
+                  color: Colors.black.withValues(alpha: 0.05),
                   blurRadius: 10,
                   offset: const Offset(0, 2),
                 ),
@@ -161,7 +161,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                           selected: isSelected,
                           onSelected: (_) => _filterByCategory(category),
                           backgroundColor: AppColors.background,
-                          selectedColor: AppColors.primary.withOpacity(0.2),
+                          selectedColor: AppColors.primary.withValues(alpha: 0.2),
                           checkmarkColor: AppColors.primary,
                           labelStyle: TextStyle(
                             color: isSelected ? AppColors.primary : AppColors.textSecondary,
